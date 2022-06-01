@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- anonymous text -->
+    ini adalah contoh anonymous text, karna ditulis tanpa menggunakan tags apa pun
+    
+    <!--list-->
+    <ul> <!--Digunakan untuk membuat list yang tidak membutuhkan urutan atau list tidak berurut-->
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3
+            <ul> <!--tags ul disini digunakan untuk membuat sebuah nested list atau list didalam list-->
+                <li>List item 3.1</li>
+                <li>List item 3.2</li>
+                <li>List item 3.3</li>
+            </ul>
+        </li>
+        <li>List item 4</li>
+    </ul>
+    
+    <!--ini adalah tipe list yang berurut-->
+    <ol type="I"> <!--untuk tipe poin urutannya bisa mengunkan atribut type pada tags <ol>-->
+        <li>Langkah pertama</li>
+        <li>Langkah kedua</li>
+        <li>Langkah ketiga</li>
+        <li>Langkah selanjutnya</li>
+    </ol>
+    
+    <ol type="A"> <!--type yang tersedia ada 1(angka), a(huruf kecil), A(huruf besar), i & I (angka romawi)-->
+        <li>Langkah pertama</li>
+        <li>Langkah kedua</li>
+        <li>Langkah ketiga</li>
+        <li>Langkah selanjutnya</li>
+    </ol>
+    
+    <ol type="1" start="5"> <!--list yang dimulai dari angka 5 dengan menambahkan stribut start-->
+        <li>Langkah pertama</li>
+        <li>Langkah kedua</li>
+        <li>Langkah ketiga</li>
+        <li>Langkah selanjutnya</li>
+    </ol>
+    
+    <ol type="1" start="5" reversed> <!--list yang berurut secara terbalik dengan menambahkan atribut reversed-->
+        <li>Langkah pertama</li>
+        <li>Langkah kedua</li>
+        <li>Langkah ketiga</li>
+        <li>Langkah selanjutnya</li>
+    </ol>
+    
+    <ol type="A"> <!--ul dan ol dapat digabungan sehinga dapat membentuk nested list dengan type list yang berbeda-->
+        <li>Langkah pertama</li>
+            <ul>
+                <li>List item 3.1</li>
+                <li>List item 3.2</li>
+                <li>List item 3.3</li>
+            </ul>
+        <li>Langkah kedua</li>
+        <li>Langkah ketiga</li>
+        <li>Langkah selanjutnya</li>
+    </ol>
+</body>
+</html>
+
