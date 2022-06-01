@@ -3,14 +3,18 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>catatan untuk modul HTML</h1>
     <!-- anonymous text -->
+    <h3>anonymous text</h3>
     ini adalah contoh anonymous text, karna ditulis tanpa menggunakan tags apa pun
     
     <!--list-->
+    <h3>tags list</h3>
+    <h5>unordered list</h5>
     <ul> <!--Digunakan untuk membuat list yang tidak membutuhkan urutan atau list tidak berurut-->
         <li>List item 1</li>
         <li>List item 2</li>
-        <li>List item 3
+        <li>List item 3 (nested list)
             <ul> <!--tags ul disini digunakan untuk membuat sebuah nested list atau list didalam list-->
                 <li>List item 3.1</li>
                 <li>List item 3.2</li>
@@ -21,6 +25,7 @@
     </ul>
     
     <!--ini adalah tipe list yang berurut-->
+    <h5>ordered list</h5>
     <ol type="I"> <!--untuk tipe poin urutannya bisa mengunkan atribut type pada tags <ol>-->
         <li>Langkah pertama</li>
         <li>Langkah kedua</li>
@@ -60,6 +65,31 @@
         <li>Langkah ketiga</li>
         <li>Langkah selanjutnya</li>
     </ol>
+
+    <h3>gambar</h3>
+    <h5>gambar asli</h5>
+    <img src="https://raw.githubusercontent.com/dicodingacademy/BelajarDasarPemrogramanWeb/image-assets/dicoding-logo.png" alt="Dicoding Logo">
+    
+    <h5>gambar yang diatur lebar dan tingginya</h5>
+    <!-- Jangan lakukan ini! karna akan menyebabkan gambar akan berubah secara keselurhan sehingga gambar tidak akan proporsional-->
+    <img src="https://raw.githubusercontent.com/dicodingacademy/BelajarDasarPemrogramanWeb/image-assets/dicoding-logo.png" alt="Dicoding Logo" width="500px" height="200px"> 
+    
+    <h5>gambar yang hanya diatur lebarnya saja</h5>
+    <!-- Menetapkan ukuran gambar berdasarkan lebar, sehingga gambar dapat lebih proporsional -->
+    <img src="https://raw.githubusercontent.com/dicodingacademy/BelajarDasarPemrogramanWeb/image-assets/dicoding-logo.png" alt="Dicoding Logo" width="500px">
+    
+    <h5>gambar yang hanya diatur tingginya saja</h5>
+    <!-- Menetapkan ukuran gambar berdasarkan tinggi, sehingga gambar tetap proporsional -->
+<img src="https://raw.githubusercontent.com/dicodingacademy/BelajarDasarPemrogramanWeb/image-assets/dicoding-logo.png" alt="Dicoding Logo" height="100px">
+    <!--
+        *tags img digunakan untuk memasukan gambar
+        *atribut src untuk memasukan sumber gambar (dapat dari internet menggunakan link atau dari lokal komputer)
+        *atribut alt digunakan untuk menggantikan gambar apabila tidak dapat terbaca sehingga dapat diganti dengan tulisan yg terdapat di alt
+        *atribut title digunakan untuk informasi dari gambar apabila cursor diarahkan ke gambar
+        *atribut weight untuk mengatur lebar gambar
+        *atribut height untuk mengatur tinggi gambar
+
+    -->
 </body>
 </html>
 
