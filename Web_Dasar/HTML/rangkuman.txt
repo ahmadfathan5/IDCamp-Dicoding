@@ -1,0 +1,17 @@
+*materi seblumnya akan ditambah belakangan
+
+
+PENGORGANISASIAN HALAMAN KONTEN
+
+> SEMANTIC ELEMEN
+    - HEADER digunakan sebagai pembuka dari konten (judul)
+    - MAIN digunakan untuk menempatkan konten utama
+    - FOOTER digunakan untuk meletakan catatan atau informasi lainnya
+    - NAV digunakan untuk menavigasikan informasi yang penting
+    - ARTICLE sebagai container yang menampung konten pada sebuah HALAMAN
+    - ASIDE digunakan untuk memberikan informasi tambahan yang berkaitan dengan suatu konten (article) atau keseluruhan halaman
+    - SECTION digunakan untuk membagi sebuah article yang berisikan konten yang masih berhubungan dengan article tersebut
+
+> GENERIC ELEMEN
+    - DIV merupakan container yang digunakan untuk menampung konten, tidak memberika efek apapun pada halaman web tanpa melakukan styling
+    - SPAN seperti div tapi digunakan untuk didalam sebuah paragram untuk membantu styling pada kata atau karakter tertentu dalam paragraf tersebut
