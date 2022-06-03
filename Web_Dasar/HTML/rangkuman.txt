@@ -15,3 +15,11 @@ PENGORGANISASIAN HALAMAN KONTEN
 > GENERIC ELEMEN
     - DIV merupakan container yang digunakan untuk menampung konten, tidak memberika efek apapun pada halaman web tanpa melakukan styling
     - SPAN seperti div tapi digunakan untuk didalam sebuah paragram untuk membantu styling pada kata atau karakter tertentu dalam paragraf tersebut
+
+
+TABEL
+
+- TABLE sebagai tags utuk menanti dimulai dan diakhirnya konten TABLE
+- TABLE ROW (TR) untuk menunjuka bari dari tabel yang dibuat
+- TABLE DATA (TD) tempat konten berada
+- TABLE HEAD (TH) digunkana untuk menunjukan judul dari konten
