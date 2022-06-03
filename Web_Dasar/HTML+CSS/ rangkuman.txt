@@ -1,0 +1,37 @@
+CSS
+
+Rule : Sebuah aturan styling yang harus diterapkan pada elemen HTML. Dalam sebuah rule terdapat selector dan deklarasi properti styling.
+Selector : Sebuah bagian dari rule, yang mengidentifikasi target elemen untuk menetapkan sebuah rule.
+Declaration : Sebuah bagian dari rule, yang terdiri dari pasangan properti dan nilainya.
+External Style Sheet : Berkas terpisah yang di dalamnya hanya terdapat sebuah rules yang akan digunakan pada website.
+Embedded Style Sheet : Kumpulan rules yang dituliskan dalam berkas HTML dengan menggunakan elemen <style>.
+Inline Style : styling yang diterapkan pada elemen HTML dengan menggunakan atribut style.
+
+hirarki rule dalam format css
+---------------------
+|CSS                |
+|   Rule            |
+|   >Selector       |
+|   >Declaration    |
+---------------------
+
+
+CSS MORE
+
+> SELECTOR
+    - SELECTOR BASIC
+        - Type selector : jenis selector yang akan berpengaruh secara langsung ke elemen/atribut yang akan diberikan styling
+        - Class Selector : jenis selector yang akan berpengaruh pada elemen/atribut yang memiliki kelas tertentu,
+            - dengan menambahkan 2 selector sekaligus yang dipisahkan oleh spasi, maka elemen/atribut tersebut akan dipengaruhi oleh 2 jenis styling tersebut
+            - dengan menambahkan nama elemen dan kelas yang dipisahkan oleh titik(.)-(elemen.class), makan selector tersebut hanya akan mempengaruhi elemen dan class yang dibuat pada file styling
+        - ID selector : jenis selector yang digunakan pada elemen yang memiliki nilai (id) tertentu dan ini bersifat unik, sehingga hanya berlaku pada id tersebut saja tidak bisa digunakan oleh elemen dengan id lain, kalau ingin banyak elemen yang menggunakan styling yang sama makan gunakan class
+        - atribut selector : jenis selector yang mirip dengan id tetapi dapat lebih spesifik samap ke value dari atribut itu
+        - universal selector : seperti namanya selector ini bersifat universal sehingga akan diterapkan ke seluruh elemen, tetapi bisa dispesifikan dengan menggabungkan jenis selector yang lainnya.
+    -   COMBINATORS SELECTOR
+        - Adjcen Sibling Selector (+) : jenis selector yang ditujukan untuk 2 target, tapi HANYA akan berpengaruh pada target ke2 setelah target ke1, dan target harus berada pada satu induk yang sama
+        - General Sibling Selector (~) : sama seperti diatas tetapi selector akan berpangaruh pada target setelah target pertama selama target tersebut berada dalam induk yang sama
+        - Child Selector (>) : jenis selector yang mirip dengan General selector, akan tetapi terdapa perbedaan yaitu pada Child selector hanyak akan mempengaruhi elemen yang terdapat pada elemen yang dapat menjadi induk (pengorganiasi konten) (contoh : elemen <div>, <section>, <artcle>, dll). diluar elemen induk tersebut maka tidak akan berpengaruh, meskipun ada atribut induk lagi didalam atribut induk pertama (keturunan tidak langsung) maka tetap tidak berpangaruh
+        - Descendan Selector (space) : seperti child selector ini hanya berpengaruh pada keturunan dari atribut yang ditentukan, yang membedakan keturunan tidak langsung tetap dapat dipengaruhi oleh selector
+        - Pseudo selector : jenis selector yang berbeda dengan sebelumnya karna langsung mempengaruhi target, selector ini menargetkan elemen pada bagian yang “tidak terlihat” seperti sifat pada elemen.
+            - Pseudo-class selector : selektor ini akan bekerja apabila elemen yang menjadi target memenuhi kondisi tertentu, contoh : kursor diarahkan pada target, maka selector akan bekerja
+            - Pseudo-elemen selector : jenis selector yang digunakan untuk menambahkan style atau hal tertentu tanpa harus menulisnya secara langsung di HTML, sehingga selector ini bisa digunakan pada banyak konten/elemen.
