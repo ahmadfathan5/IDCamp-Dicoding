@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+/* @font-face {
+    font-family: "Dicoding Font";
+    src: url('FILE-FONT.TTF');
+} */
+
 body {
-    font-family: sans-serif;
+    font-family: 'Quicksan', sans-serif;
 }
 
 h2, h3 {
@@ -14,4 +21,8 @@ footer {
     padding: 20px;
     color: white;
     background-color: #00a2c6;
+}
+
+p {
+    font-family: "Dicoding Font";
 }
