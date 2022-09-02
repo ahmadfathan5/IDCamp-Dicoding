@@ -44,8 +44,6 @@ function generateBookObject(id, titleBook, authorBook, yearBook, isCompleted) {
 }
 
 document.addEventListener(RENDER_EVENT, function() {
-    console.log(books);;
-
     const unfinishedBookList = document.getElementById('incompleteBookshelfList');
     unfinishedBookList.innerHTML = '';
 
@@ -64,28 +62,21 @@ document.addEventListener(RENDER_EVENT, function() {
 })
 
 function bookOnShelf(bookObject) {
-    // baris awal data buku
-        // judul buku
     const textTitle = document.createElement('h3');
     textTitle.innerText = bookObject.titleBook;
         
-        //penulis buku
     const textAuthor = document.createElement('p');
     textAuthor.innerText = "Author: " + bookObject.authorBook;
 
-        //tahun buku
     const textYear = document.createElement('p');
     textYear.innerText = "Year: " + bookObject.yearBook;
 
-    //tag article untuk data buku
     const Article = document.createElement('article');
     Article.classList.add('book_item');
     Article.append(textTitle, textAuthor, textYear);
     Article.setAttribute('id', 'book-$bookObject.id');
-        //baris awal button
-            //button finished dan unfinished dan delete
+    
     if (bookObject.isCompleted) {
-        //button unfinished
         const buttonUnfinished = document.createElement('button');
         buttonUnfinished.classList.add('green');
         buttonUnfinished.innerText = "Unfinished";
@@ -94,7 +85,6 @@ function bookOnShelf(bookObject) {
             undoBookFromFinished(bookObject.id);
         });
 
-        //button delete
         const buttonDelete = document.createElement('button');
         buttonDelete.classList.add('red');
         buttonDelete.innerText = "Delete";
@@ -102,7 +92,7 @@ function bookOnShelf(bookObject) {
         buttonDelete.addEventListener('click', function() {
             deleteBookFromList(bookObject.id);
         });
-                //tag div untuk button
+
         const buttonContainer = document.createElement('div');
         buttonContainer.classList.add('action');
         buttonContainer.append(buttonUnfinished, buttonDelete);
@@ -110,7 +100,6 @@ function bookOnShelf(bookObject) {
         Article.append(buttonContainer);
         
     } else {
-        //butoon finished
         const buttonFinished = document.createElement('button');
         buttonFinished.classList.add('green');
         buttonFinished.innerText = "Finished";
@@ -119,7 +108,6 @@ function bookOnShelf(bookObject) {
             addBookToFinished(bookObject.id);
         });
 
-        //button delete
         const buttonDelete = document.createElement('button');
         buttonDelete.classList.add('red');
         buttonDelete.innerText = "Delete";
@@ -127,16 +115,13 @@ function bookOnShelf(bookObject) {
         buttonDelete.addEventListener('click', function() {
             deleteBookFromList(bookObject.id);
         });
-                //tag div untuk button
+
         const buttonContainer = document.createElement('div');
         buttonContainer.classList.add('action');
         buttonContainer.append(buttonFinished, buttonDelete);  
 
         Article.append(buttonContainer);
-
     }    
-        //baris akhir button
-    //baris akhir data buku
 
     return Article;
 }
@@ -215,10 +200,6 @@ function isStorageExist() {
     }
     return true
 }
-
-document.addEventListener(SAVED_EVENT, function(){
-    console.log(localStorage.getItem(STORAGE_KEY));
-});
 
 function loadDataFromStorage() {
     const serializedData = localStorage.getItem(STORAGE_KEY);
